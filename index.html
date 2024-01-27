@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>NovaZ Studio</title>
+</head>
+<body>
+    <header>
+        <h2 class="titulo">NovaZ Studio</h2>
+    </header>
+
+    <main>
+        <h1>Bienvenido a NovaZ Studio</h1>
+        <p>NovaZ Studio es una empresa dedicada al desarrollo independiente de aplicaciones para Android. Actualmente, no contamos con proyectos disponibles para el público, pero les invitamos a preinscribirse para recibir acceso a la versión beta de nuestras futuras aplicaciones.</p>
+        <p><strong>Atentamente,</strong><br>Axel<br>Fundador y CEO de NovaZ Studio</p>  
+
+        <div id="contador"></div>
+
+        <h2 class="titulo">Formulario de Preinscripción</h2>
+        <form action="procesar_formulario.php" method="post" id="preinscripcion-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje adicional (opcional):</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <button type="submit">Enviar Preinscripción</button>
+        </form>       
+    </main>
+
+    <script src="/server/templates/JS/contador.js"></script>
+    <script src="/server/templates/JS/formulario.js"></script>
+</body>
+</html>
